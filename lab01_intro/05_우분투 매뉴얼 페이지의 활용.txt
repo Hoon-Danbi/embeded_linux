@@ -1,0 +1,10 @@
+
+매뉴얼 페이지를 사용하기 위하여 패키지를 설치한다.
+$wget http://ftp.debian.org/pool/main/m/manpages/manpages-dev_3.05-1_all.deb
+$dpkg -i manpages-dev_3.05-1_all.deb
+
+설치후 . . .
+
+(사용예)
+$man fork
+

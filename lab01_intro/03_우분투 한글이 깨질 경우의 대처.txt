@@ -1,0 +1,29 @@
+우분투 한글이 깨질 경우의 대처
+lab10 2011/02/21 22:31 
+수정 : 수정(창으로) | (비공개)→공개로 변경합니다 | 관련글(트랙백) | 삭제 
+"VIM 편집기에서의 한글깨짐 문제 해결 방안"
+
+$vim ~/.vimrc
+파일의 내용...
+set fileencodings=euc-kr
+set laststatus=2
+set statusline=%h%F%m%r%=[%l:%c(%p%%)]
+set ts=4
+set nu
+set autoindent
+
+
+
+
+"파일목록/디렉토리목록의 한글깨짐 문제 해결 방안"
+
+$vim /etc/environment
+파일의 내용...
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+LANG="ko_KR.UTF-8"
+LANG="ko_KR.EUC-KR"
+LANGUAGE="ko_KR:ko:en_GB:en"
+
+수정 후 재 기동(REBOOT) 한다.
+
+
